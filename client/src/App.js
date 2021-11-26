@@ -1,13 +1,15 @@
 import React from "react";
 import{BrowserRouter} from "react-router-dom";
-import AppRouter from "./components/AppRouter";
-import NavbarTop from "./components/Navbar";
+import AppRouter from "./components/AppRouter/AppRouter";
+import Footer from "./components/Footer";
+import NavbarTop from "./components/Header/Header";
 
 function App() {
   return (
    <BrowserRouter>
      <NavbarTop/>
-     <AppRouter  />
+     <AppRouter />
+     <Footer/>
    </BrowserRouter>
     
   );

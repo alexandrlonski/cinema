@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import LogIn from '../components/LogIn';
+import LogIn from '../components/LogIn/LogIn';
 
-const Auth = () => {
+const LogInPage = () => {
  return (
   <Container>
    <LogIn/>
@@ -10,4 +10,4 @@ const Auth = () => {
  );
 };
 
-export default Auth;
+export default LogInPage;

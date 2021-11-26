@@ -1,16 +1,12 @@
 import React from 'react';
-import {  Container } from 'react-bootstrap';
-import Film from '../components/Film';
+import Film from '../components/Film/Film';
+import { films } from '../data/Data';
 
 const Films = () => {
-
  return (
-  <Container className="d-flex justify-content-center  ">
-    <Film/>
-    <Film/>
-    <Film/>
-    <Film/>
-   </Container>
+  <div className="d-flex justify-content-center" style={{padding: "50px"}}>
+    {films.map((el)=> <Film title={el.title} src={el.src} desc={el.desc} />)}
+  </div>
  );
 };
 

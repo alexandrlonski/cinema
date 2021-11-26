@@ -3,6 +3,6 @@ import ReactDOM from 'react-dom';
 import App from './App';
 
 ReactDOM.render(
-    <App className="d-flex justify-content-between" />,
+    <App style={{height:"500px"}} />,
   document.getElementById('root')
 );

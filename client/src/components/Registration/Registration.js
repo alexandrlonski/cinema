@@ -1,10 +1,17 @@
-import Button from '@restart/ui/esm/Button';
 import React from 'react';
-import { Form } from 'react-bootstrap';
+import { Form, Button } from 'react-bootstrap';
 
-const LogIn = () => {
+const Registration = () => {
  return (
   <Form>
+  <Form.Group className="mb-3" controlId="formBasicName">
+    <Form.Label>Name</Form.Label>
+    <Form.Control type="text" placeholder="Enter name" />
+  </Form.Group>
+  <Form.Group className="mb-3" controlId="formBasicCity">
+    <Form.Label>Your city</Form.Label>
+    <Form.Control type="text" placeholder="Enter your city" />
+  </Form.Group>
   <Form.Group className="mb-3" controlId="formBasicEmail">
     <Form.Label>Email address</Form.Label>
     <Form.Control type="email" placeholder="Enter email" />
@@ -20,11 +27,11 @@ const LogIn = () => {
   <Form.Group className="mb-3" controlId="formBasicCheckbox">
     <Form.Check type="checkbox" label="Check me out" />
   </Form.Group>
-  <Button variant="primary" type="submit">
+  <Button variant="secondary" type="submit">
     Submit
   </Button>
 </Form>
  );
 };
 
-export default LogIn;
+export default Registration;
