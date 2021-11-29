@@ -24,7 +24,7 @@ export const publicRoutes = [
    Component: Films
   },
   {
-   path: ABOUTFILM_ROUTE + ':id',
+   path: ABOUTFILM_ROUTE,
    Component: AboutFilm
   },
   {

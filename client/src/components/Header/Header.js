@@ -10,7 +10,7 @@ const Header = () => {
  return (
   <Navbar  bg="dark" variant="dark">
     <Container >
-    <Navbar.Brand   href="/">Cinema</Navbar.Brand>
+    <NavLink className="link"  to="/" >Cinema</NavLink>
     <Nav className="d-flex justify-content-between ">
       
     <Form.Select style={{backgroundColor: "#565E64", color: "#FFF", outline:"none", border:"none" }} >
