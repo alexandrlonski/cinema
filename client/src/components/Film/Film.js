@@ -2,12 +2,12 @@ import React from 'react';
 import { Card } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import { ABOUTFILM_ROUTE } from '../../utils/consts';
-import {useDispatch} from "react-redux"
-import { changeFilm } from '../../store/filmReducer';
+import {useDispatch, useSelector} from "react-redux"
+import { changeFilm } from '../../store/FilmReducer';
 
 const Film = (props) => {
  const dispatch = useDispatch();
-
+ 
  const changeFilmId = (filmId) => {
   dispatch(changeFilm(filmId))
  }

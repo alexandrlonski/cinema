@@ -9,7 +9,7 @@ const AppRouter = () => {
  
  return (
   <Container style={{padding:"40px"}}>
-    <Routes  >
+    <Routes>
      {isAuth && authRoutes.map(({path, Component}) => 
      <Route key={path}  path={path} element={<Component/>} exact/>
      )}

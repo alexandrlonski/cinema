@@ -1,5 +1,4 @@
 import { ABOUTUS_ROUTE, ADMIN_ROUTE, BASKET_ROUTE, FILMS_ROUTE, LOGIN_ROUTE, REGISTRATION_ROUTE } from "../../utils/consts"
-import {Nav} from "react-bootstrap"
 
 export const initHeader = [
  {
@@ -65,7 +64,7 @@ export const userHeader = [
  },
  {
   id:4,
-  tagName: Nav.Link,
+  name: "LogOut",
   route: '/'
  },
 ]

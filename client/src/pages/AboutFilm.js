@@ -4,7 +4,7 @@ import { films } from '../data/Data';
 import {useSelector} from "react-redux"
 
 const AboutFilm = () => {
- const filmId = useSelector((store)=> store.id)
+ const filmId = useSelector((store)=> store.filmId.filmId)
  
  return (
   <div>
